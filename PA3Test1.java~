@@ -1,0 +1,11 @@
+import meggy.Meggy;
+
+class PA3Test1{
+    public static void main(String[] args){
+	while(true){
+	    Meggy.delay(1000)
+	    Meggy.setPixel((byte)4, (byte)4, Meggy.Color.RED);
+	    Meggy.getPixel((byte)4, (byte)4)
+	}
+    }
+}

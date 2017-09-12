@@ -1,0 +1,23 @@
+import meggy.Meggy;
+
+class PA5Test3{
+    public static void main(String[] args){
+	Meggy.setPixel((byte)2, (byte)6, Meggy.Color.VIOLET);
+	
+	Something thing = new Something();
+	
+	while(true){
+	    if(Meggy.checkButton(Meggy.Button.A)){ 
+		new Something().reddot((byte)1,(byte)1);
+	    }else{
+		Meggy.setPixel((byte)1,(byte)1, Meggy.Color.BLUE);
+	    }
+	}
+    }
+}
+
+class Something{
+    public void reddot(byte x, byte y){
+	Meggy.setPixel(x,y,Meggy.Color.RED);
+    }
+}
